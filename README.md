@@ -1,4 +1,4 @@
-# toDoList_Vue_Ionic
+# toDoList_Ionic
 
 A project about the creation of a to do list.
 
