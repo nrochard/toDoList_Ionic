@@ -1,0 +1,94 @@
+<!DOCTYPE html class="md">
+<html lang="en" mode="ios">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Script pour Ionic -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <!-- Script Vue.JS -->
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="js/app.js"></script>
+    <title>To do list</title>
+</head>
+<body>
+    <ion-app id="app">
+        <ion-header>
+          <ion-toolbar color="secondary header">
+            <ion-title>To Do List</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      
+        <ion-content class="ion-padding">
+            <ion-text color="secondary">
+                <h1>Bonjour <strong>Noémie</strong>,<br><span>Tu as quoi de prévu à faire ?</span></h1>
+            </ion-text>
+            <ion-text >
+                <p class="nb_task">Tu as 3 tâches.</p>
+            </ion-text>
+            <form class="form">
+                <ion-item class="input" lines="none">
+                    <ion-input placeholder="Une nouvelle tâche ?"></ion-input>
+                  </ion-item>
+            </form>
+            <!-- Checkboxes in a List -->
+            <ion-card>
+                <ion-item-sliding>
+                    <ion-item lines="none">
+                        <ion-checkbox  color="secondary" slot="start"></ion-checkbox>
+                        <ion-label>
+                            <h2>Faire mes devoirs</h2>
+                        </ion-label>
+                    </ion-item>
+                    <ion-item-options side="end">
+                        <ion-item-option color="medium">
+                            <ion-icon name="trash" slot="icon-only"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-card>
+
+            <ion-card>
+                <ion-item-sliding>
+                    <ion-item lines="none">
+                        <ion-checkbox  color="secondary" slot="start"></ion-checkbox>
+                        <ion-label>
+                            <h2>Regarde "La Casa de Papel"</h2>
+                        </ion-label>
+                    </ion-item>
+                    <ion-item-options side="end">
+                        <ion-item-option color="medium">
+                            <ion-icon name="trash" slot="icon-only"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-card>
+
+            <ion-card>
+                <ion-item-sliding>
+                    <ion-item lines="none">
+                        <ion-checkbox  color="secondary" slot="start"></ion-checkbox>
+                        <ion-label>
+                            <h2>Ranger ma chambre</h2>
+                        </ion-label>
+                    </ion-item>
+                    <ion-item-options side="end">
+                        <ion-item-option color="medium">
+                            <ion-icon name="trash" slot="icon-only"></ion-icon>
+                        </ion-item-option>
+                    </ion-item-options>
+                </ion-item-sliding>
+            </ion-card>
+        </ion-content>
+      
+        <ion-footer>
+          <ion-toolbar color="medium">
+            <ion-title class="footer">Bonne journée</ion-title>
+          </ion-toolbar>
+        </ion-footer>
+      </ion-app>
+</body>
+</html>
